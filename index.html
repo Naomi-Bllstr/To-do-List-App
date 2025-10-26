@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="H1"></h1>
+    <h3>A simple to-do list application with an optional alarm function to help you manage your time effectively and remind you of your unfinished tasks at the same time. Use it as you will.(Desktop site recommended)</h3>
+    <div class="container">
+        <div class="header" id="myHeader">
+            <h2>MY TO-DO LIST</h2>
+            <div class="filter">
+                <button id="filter-all">All</button>
+                <button id="filter-active">Active</button>
+                <button id="filter-completed">Completed</button>
+            </div>
+        </div>
+        
+        <div id="input">
+            <input type="text" id="addTask" placeholder="Add a Task...">
+            <button id="addtaskbtn">Add</button> 
+            <input type="datetime-local" id="alarm-time" placeholder="Set Alarm">
+            <div id="error-message" style="color:red; display:none;"></div>
+        </div>
+        <ul id="tasklist">
+            
+        </ul>
+        <button id="clearbtn">Clear All</button>
+    </div>
+    
+    <div id="notification" style="
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #4caf50;
+        color: white;
+        padding: 20px 30px;
+        border-radius: 4px;
+        display: none;
+        z-index: 1000;
+    "></div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
