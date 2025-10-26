@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     function deleteTask(index) {
         if (confirm("Are you sure to delete this task?")) {
-            tasks=tasks.splice(index, 1)
+            tasks.splice(index, 1)
         }
         renderTasks();
     }
@@ -230,3 +230,4 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 
 });
+
