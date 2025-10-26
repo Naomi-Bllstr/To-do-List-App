@@ -127,8 +127,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
 
     function deleteTask(index) {
-        if (tasks.splice(index, 1)){
-            confirm("Are you sure to delete this task?");
+        if (confirm("Are you sure to delete this task?")) {
+            tasks=tasks.splice(index, 1)
         }
         renderTasks();
     }
@@ -227,5 +227,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
             scheduleAlarm(task.text, task.alarmTime);
         }
     });
+
 
 });
